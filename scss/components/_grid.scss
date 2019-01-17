@@ -1,9 +1,14 @@
 .grid {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 48px auto 48px; // header, scroll-area, footer
+  height: auto;
+  grid-template-rows: 100vh 100vh 100vh;
 }
 
-.grid__scroll-area {
-  overflow-y: scroll;
+.grid__home {
+  display: grid;
+  height: auto;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
 }

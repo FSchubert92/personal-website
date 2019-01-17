@@ -7,6 +7,9 @@
 .p-20 {
   padding: 20px; }
 
+.m-10 {
+  margin: 10px; }
+
 * {
   box-sizing: border-box; }
 
@@ -14,15 +17,30 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: #333;
-  overflow: hidden; }
+  overflow: scroll; }
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #970606;
+  xmargin: 30px;
+  box-shadow: 3px 3px 10px;
+  filter: blur(0.2px);
+  opacity: 0; }
 
 .grid {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 48px auto 48px; }
+  height: auto;
+  grid-template-rows: 100vh 100vh 100vh; }
 
-.grid__scroll-area {
-  overflow-y: scroll; }
+.grid__home {
+  display: grid;
+  height: auto;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 100vh;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .header {
   display: flex;
