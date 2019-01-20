@@ -45,6 +45,12 @@ p {
   font-size: 4em;
   color: white;
   margin-left: 120px;
+  @media screen and (max-width: 400px) {
+    display: inline-block;
+    font-size: 3em;
+    margin-left: 0;
+    padding: 15px;
+  }
 }
 .contact > a:hover {
   background: white;
@@ -62,7 +68,18 @@ figure > a > img {
   margin-top: 0;
   margin-bottom: auto;
   @media screen and (max-width: 400px) {
+    display: none;
     font-size: 4em;
+  }
+}
+.Referenzen__h2-sm {
+  display: none;
+  @media screen and (max-width: 400px) {
+    display: block;
+    font-size: 4em;
+    color: $light;
+    margin-top: 0;
+    margin-bottom: auto;
   }
 }
 

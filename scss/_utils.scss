@@ -47,6 +47,10 @@
 .justify-content-space-between {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 400px) {
+    display: block;
+    margin: 20px 0;
+  }
 }
 
 .Referenzen__tag {
@@ -64,6 +68,10 @@
 }
 .display-flex {
   display: flex;
+
+  @media screen and (max-width: 400px) {
+    display: block;
+  }
 }
 .pl-15 {
   padding-left: 15px;
