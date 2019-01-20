@@ -8,3 +8,65 @@ body {
   color: $dark;
   overflow: scroll;
 }
+
+p {
+  margin-right: 30px;
+  line-height: 1.3em;
+  @media screen and (max-width: 400px) {
+    padding: 20px;
+    line-height: 1.2em;
+  }
+}
+
+.home__h2 {
+  font-size: 8em;
+  margin-top: 0;
+  margin-bottom: auto;
+  @media screen and (max-width: 400px) {
+    font-size: 4em;
+  }
+}
+.contact {
+  background-color: crimson;
+  color: white;
+  font-size: 1em;
+}
+
+.contact > h2 {
+  font-size: 8em;
+  display: inline-block;
+  margin: 0;
+  @media screen and (max-width: 400px) {
+    font-size: 4em;
+  }
+}
+.contact__link {
+  text-decoration: none;
+  font-size: 4em;
+  color: white;
+  margin-left: 120px;
+}
+.contact > a:hover {
+  background: white;
+  color: crimson;
+  padding: 10px;
+}
+
+figure > a > img {
+  width: 120px;
+  height: 120px;
+}
+.Referenzen__h2 {
+  font-size: 8em;
+  color: $light;
+  margin-top: 0;
+  margin-bottom: auto;
+  @media screen and (max-width: 400px) {
+    font-size: 4em;
+  }
+}
+
+.Referenzen__text {
+  color: white;
+  margin-right: 60px;
+}

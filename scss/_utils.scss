@@ -12,3 +12,62 @@
 .m-10 {
   margin: 10px;
 }
+.skills__tag {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-right: 5px;
+  margin-top: 10px;
+  list-style-type: none;
+  background-color: crimson;
+  border-radius: 10%;
+  color: white;
+}
+
+.span-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 0;
+  padding: 0;
+}
+.sm-span-2 {
+  @media screen and (max-width: 400px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+    padding: 0;
+  }
+}
+.sm-start-col2 {
+  @media screen and (max-width: 400px) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.justify-content-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Referenzen__tag {
+  display: inline-block;
+  padding: 6px 9px;
+  margin: 20px 20px;
+  list-style-type: none;
+  background-color: crimson;
+  border-radius: 10%;
+  color: white;
+}
+.align-items-start {
+  display: flex;
+  align-items: flex-start;
+}
+.display-flex {
+  display: flex;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pr-15 {
+  padding-right: 15px;
+}

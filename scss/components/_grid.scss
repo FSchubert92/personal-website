@@ -1,14 +1,24 @@
 .grid {
   display: grid;
   height: auto;
-  grid-template-rows: 100vh 100vh 100vh;
+  grid-template-rows: 100vh auto 80px;
 }
 
 .grid__home {
   display: grid;
   height: auto;
-  grid-template-columns: 30% auto;
-  grid-template-rows: 100vh;
+  max-width: 100vw;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 70vh 30vh auto 50vh;
+  grid-column-gap: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 40px;
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    margin-left: 7px;
+    padding: 0;
+  }
 }
