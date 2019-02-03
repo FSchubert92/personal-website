@@ -1,10 +1,11 @@
-@import "colors";
-@import "utils"; // functional helper classes e.g. self-written .mb-3
-@import "base"; // global element styles e.g. h1
-@import "logo";
+@import 'colors';
+@import 'utils'; // functional helper classes e.g. self-written .mb-3
+@import 'base'; // global element styles e.g. h1
+@import 'logo'; // Red Dot Logo
+@import 'pulse-keyframes'; // Animation of the Red dot Pulse
 
 // components:
-@import "components/grid"; // main grid
-@import "components/header"; // main header
-@import "components/footer"; // main header
+@import 'components/grid'; // main grid
+@import 'components/header'; // main header
+@import 'components/footer'; // main header
 // ... more

@@ -184,21 +184,37 @@ figure > a > img {
 .referenzen__link {
   color: white; }
 
+.logo__background,
 .logo {
+  position: absolute;
   max-width: 60px;
   max-height: 60px;
   height: 100px;
   width: 100px;
-  border-radius: 50%;
-  background: crimson;
-  xmargin: 30px;
-  xbox-shadow: 3px 3px 10px;
-  filter: blur(0.2px);
-  opacity: 100; }
+  border-radius: 100%; }
   @media screen and (max-width: 400px) {
+    .logo__background,
     .logo {
       max-height: 40px;
       max-width: 40px; } }
+
+.logo__background {
+  animation: pulse 3.3s ease infinite;
+  background: crimson; }
+
+.logo {
+  position: relative;
+  background: crimson;
+  cursor: pointer; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    opacity: 0.3; }
+  100% {
+    transform: scale(1.5);
+    opacity: 0; } }
 
 .grid {
   display: grid;
@@ -225,6 +241,7 @@ figure > a > img {
 
 .header {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center; }
 
